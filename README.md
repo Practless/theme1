@@ -13,18 +13,18 @@ Niveau d'installation : ⭐⭐⭐
 
 🗒️Le CSS global est trop long pour être copié/collé directement dans la feuille de forumactif. Je vous conseille de l'héberger sur archivehost ou dropbox et de rajouter un lien vers celui-ci dans votre overall_header. N'hésitez pas à me mp si vous n'êtes pas à l'aise avec l'installation, je vais faire au mieux pour vous orienter !
 
-Il comporte :<br></br>
-• La base du Blank Theme en modernbb (en configurant votre forum avec les paramètres associés)<br></br>
-• Le plugin Messenger d'Ange Tuteur remanié par Geniuspanda, Switcheroo et le mode Edison clair/sombre réalisés par Monomer. <br></br>
-• Une page d'accueil<br></br>
-• Les catégories<br></br>
-• La liste des sujets et l'apparence des sujets<br></br>
-• L'apparence du profil<br></br>
-• La liste des membres<br></br>
-• La liste des messages privés et l'apparence d'un message privé<br></br>
-• Une série de codages (fiche de présentation avec onglets, fiche utilisable pour rédiger ses annexes, fiche utilisable pour les posts administratif comme le règlement etc...)<br></br>
-• Un set Instagram (profil, posts, like, suivre, commenter, story)<br></br>
-• Un set de type Tinder (profil, like, super-like, match, pas intéressé)<br></br>
+Il comporte :<br>
+• La base du Blank Theme en modernbb (en configurant votre forum avec les paramètres associés)<br>
+• Le plugin Messenger d'Ange Tuteur remanié par Geniuspanda, Switcheroo et le mode Edison clair/sombre réalisés par Monomer. <br>
+• Une page d'accueil<br>
+• Les catégories<br>
+• La liste des sujets et l'apparence des sujets<br>
+• L'apparence du profil<br>
+• La liste des membres<br>
+• La liste des messages privés et l'apparence d'un message privé<br>
+• Une série de codages (fiche de présentation avec onglets, fiche utilisable pour rédiger ses annexes, fiche utilisable pour les posts administratif comme le règlement etc...)<br>
+• Un set Instagram (profil, posts, like, suivre, commenter, story)<br>
+• Un set de type Tinder (profil, like, super-like, match, pas intéressé)<br>
 
 📌 Vous trouverez le forum où les codages ont été utilisés ici : https://straightouttabronx.forumactif.com/. Il s'agit d'un forum rpg que j'ai monté en décembre 2023 mais qu'on a fermé en mars 2024 avec ma co-admin. Les inscriptions sont fermées mais vous pouvez au moins y retrouver l'apparence globale de ce qui est proposé sur les captures d'écran.
 
