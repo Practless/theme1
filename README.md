@@ -25,6 +25,8 @@ Il comporte :<br>
 • Une série de codages (fiche de présentation avec onglets, fiche utilisable pour rédiger ses annexes, fiche utilisable pour les posts administratif comme le règlement etc...)<br>
 • Un set Instagram (profil, posts, like, suivre, commenter, story)<br>
 • Un set de type Tinder (profil, like, super-like, match, pas intéressé)<br>
+• Un set de 10 fiches de rp aux couleurs du forum (adaptable au mode noir/clair) ainsi qu'un codage pour l'apparence de vos sms<br>
+• Un set de 5 signatures aux couleurs du forum<br>
 
 📌 Vous trouverez le forum où les codages ont été utilisés ici : https://straightouttabronx.forumactif.com/. Il s'agit d'un forum rpg que j'ai monté en décembre 2023 mais qu'on a fermé en mars 2024 avec ma co-admin. Les inscriptions sont fermées mais vous pouvez au moins y retrouver l'apparence globale de ce qui est proposé sur les captures d'écran.
 
