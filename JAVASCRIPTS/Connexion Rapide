@@ -1,0 +1,33 @@
+$(function() {
+    if (_userdata["session_logged_in"] == "0") {
+        /* PERSONNALISATION DES TEXTES */
+        var txt_username = "Nom d'utilisateur",
+            txt_password = "Mot de passe",
+            txt_login = "Connexion",
+            txt_remember = "Rester connecté(e)",
+            txt_guest = "Pas encore inscrit(e) ?",
+            txt_create = "Créez un compte",
+            txt_lost = "Mot de passe perdu ?",
+            txt_recover = "Récupérez-le";
+        /* FIN DE PERSONNALISATION - Ne rien modifier ci-après */
+ 
+        $('body').prepend('<div id="quickloginform_overlay" style="display:none;z-index:2147483647"></div><div id="quickloginform" style="display:none;z-index:2147483647"><form id="fa-login-form" class="login-form" name="form_login" method="post" action="/login"><input type="text" maxlength="40" name="username" placeholder="' + txt_username + '" required=""><input type="password" maxlength="32" name="password" placeholder="' + txt_password + '" required=""><button name="login">' + txt_login + '</button><label><p>' + txt_remember + ' <input type="checkbox" style="vertical-align: middle;" name="autologin"></p></label><p style="float:left; text-align:left;">' + txt_guest + '<br><a href="/register">' + txt_create + '</a></p><p style="float:right; text-align:right;">' + txt_lost + '<br><a href="/profile?mode=sendpassword">' + txt_recover + '</a></p><div style="clear:both;"></div><input name="redirect" value="' + window.location.pathname + '" type="hidden"></form></div>');
+ 
+        $('a[href*="/login"]').click(function() {
+            $('#quickloginform, #quickloginform_overlay').fadeIn();
+            $('#quickloginform input[name="username"]').focus();
+            return false;
+        });
+ 
+        $(document).click(function(e) {
+            if ($(e.target).closest('#quickloginform form').length === 0) {
+                $('#quickloginform, #quickloginform_overlay').fadeOut();
+            }
+        });
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27) {
+                $('#quickloginform, #quickloginform_overlay').fadeOut();
+            }
+        });
+    }
+});
