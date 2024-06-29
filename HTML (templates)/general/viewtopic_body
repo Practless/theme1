@@ -1,0 +1,408 @@
+<br />
+
+ 
+<!----------------------------------------------->
+<!-- BARRE DE GESTION -------------->
+
+<div class="links_bar">
+  
+        <!-- Boutons : nouveau -->
+        <!-- BEGIN switch_user_authpost -->
+        <a class="buttons" href="{U_POST_NEW_TOPIC}" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;
+        <!-- END switch_user_authpost -->
+
+        <!-- Bouton : répondre -->
+        <!-- BEGIN switch_user_authreply -->
+        <a class="buttons" href="{U_POST_REPLY_TOPIC}"><img class="reply_button" src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
+        <!-- END switch_user_authreply -->
+  
+        <!-- Pagination -->
+        <span class="pagination right">
+            {PAGINATION}
+        </span>
+         
+  
+</div>
+
+<!----------------------------------------------->
+<!-- MESSAGE -------------->
+
+
+<!-- Contenenur des messages -->
+<div class="container">
+
+    <!-- Titre du poste -->
+    <h1 class="page-title">{TOPIC_TITLE}</h1>
+  
+  <!----------------------------------------------->
+<!-- LIENS DE NAVIGATION -------------->
+
+<div class="navigation_links">
+
+    <!-- Chaîne de lien : Catégorie > Forum > Sous-fo -->
+    <span class="navigation_chain">
+        {NAV_CAT_DESC}
+    </span>
+
+</div>
+
+    <!-- Affichage d'un message -->
+    <!-- BEGIN postrow -->
+    <!-- BEGIN displayed -->
+    <div id="{postrow.displayed.U_POST_ID}"></div>
+    <div class="post post_row post--{postrow.displayed.U_POST_ID}" id="p{postrow.displayed.U_POST_ID}">
+
+        <!-- Conteneur informations du message-->
+        <div class="post_details">
+              
+
+
+        </div>
+        <!-- Fin détails -->
+
+
+        <!-- Colonne de profil -->
+
+        <div class="post_profile" id="profile{postrow.displayed.U_POST_ID}">
+                      <!-- En ligne -->
+            <center>
+                <div class="{postrow.displayed.ONLINE_IMG_NEW}"> <!-- VOIR CSS .online -->
+                	{postrow.displayed.ONLINE_IMG_NEW}<!-- Textuel -->
+                </div>
+            </center>
+
+            <center>
+                <!-- Pseudo -->
+               <span class="post_pseudo"> {postrow.displayed.POSTER_NAME}</span>
+              
+           
+          <br />
+
+                <!-- Rang -->
+                <span class="post_rank">
+                    {postrow.displayed.POSTER_RANK_NEW} <!-- Textuel -->
+                    {postrow.displayed.RANK_IMAGE} <!-- Image -->
+                </span><br />
+            </center>
+
+            <!-- Avatar -->
+            <div class="post_avatar">
+              <div class="post_avatar_avatar">{postrow.displayed.POSTER_AVATAR}</div>
+              
+              
+              <div id="post_avatar_infos">
+ 
+                <div id="post_avatar_img"><!-- BEGIN profile_field --><div id="field_id{profile_field.ID}">{postrow.displayed.profile_field.CONTENT} </div><!-- END profile_field --></div>
+                <div id="post_avatar_pseudo"><!-- BEGIN profile_field --><div id="field_id{profile_field.ID}">{postrow.displayed.profile_field.CONTENT} </div><!-- END profile_field --></div>
+                <div id="post_avatar_faceclaim"><!-- BEGIN profile_field --><div id="field_id{profile_field.ID}">{postrow.displayed.profile_field.CONTENT} </div><!-- END profile_field --></div>
+                
+                
+                
+                <div id="post_avatar_tableau">
+                  <div id="post_avatar_dollars"><!-- BEGIN profile_field --><div id="field_id{profile_field.ID}">{postrow.displayed.profile_field.CONTENT} </div><!-- END profile_field --><span>dollars</span></div>
+                  <div id="post_avatar_messages"><!-- BEGIN profile_field --><div id="field_id{profile_field.ID}">{postrow.displayed.profile_field.CONTENT} </div><!-- END profile_field --> <span>messages</span></div>
+                
+                </div>
+                
+                
+                
+              </div>
+            </div>
+          
+          
+          
+          
+          
+            <br />
+              
+
+     <div onClick="a=this.nextSibling.style;a.display=(a.display==''?'none':'')" class="bouton-profil">[ informations ]</div>
+          
+          
+     <div class="profil-cache" style="display: none">
+      
+       
+       <div class="postdetails poster-profile">
+         <!-- BEGIN profile_field -->
+ <div id="field_id{profile_field.ID}" class="profil-cache_infos">{postrow.displayed.profile_field.LABEL} {postrow.displayed.profile_field.CONTENT}{postrow.displayed.profile_field.SEPARATOR}</div>
+         <!-- END profile_field -->
+        </div>
+                              
+     
+
+               
+             <!-- Récompenses -->
+                <div {postrow.displayed.AWARDS_SHOW} id="list_awards">
+                	{postrow.displayed.AWARDS}
+                </div>
+                <div class="award_more"></div>
+
+                <!-- Champs de profil de la feuille de personnage -->
+                {postrow.displayed.POSTER_RPG}
+
+            </div>
+
+            <br />
+
+            <!-- Lien de contact -->
+            <div class="profil_contact">
+                {postrow.displayed.PROFILE_IMG} &nbsp; <!-- Profil -->
+                {postrow.displayed.PM_IMG} &nbsp; <!-- MP -->
+                <!-- Autre contact-->
+
+              
+                <!-- BEGIN contact_field -->
+                {postrow.displayed.contact_field.CONTENT} <!-- Autre champs de contact -->
+                <!-- END contact_field -->
+            </div>
+             <div class="profil-tw">    <!-- BEGIN profile_field -->
+ <div id="field_id{profile_field.ID}" class="profil-tw2">{postrow.displayed.profile_field.LABEL} {postrow.displayed.profile_field.CONTENT}</div>
+                            <!-- END profile_field --></div>
+        </div>
+        <!-- Fin colonne profil -->
+
+
+        <!-- Contenu du message -->
+      
+      
+        <div class="post_message postbody content"> 
+          
+
+              <!-- Boutons d'édition de message -->
+                <ul class="profile-icons ">           <span class="post_date">
+		<!-- Lien d'ancre vers le message -->
+                ( <a href="{postrow.displayed.POST_URL}">#</a> )
+                <!-- Date du message -->
+                <time>{postrow.displayed.POST_DATE_NEW}</time>
+            </span>
+                    <li>{postrow.displayed.QUOTE_IMG}</li>
+                    <li>{postrow.displayed.EDIT_IMG}</li>
+                    <li>{postrow.displayed.DELETE_IMG}</li>
+                    <li>{postrow.displayed.IP_IMG}</li>
+                </ul>
+
+            <div id="post_msg">{postrow.displayed.MESSAGE} </div>
+          
+                   <!-- Signature -->
+            <!-- BEGIN switch_signature -->
+            <div class="signature_div" id="sig{postrow.displayed.U_POST_ID}">{postrow.displayed.SIGNATURE_NEW}</div>
+            <!-- END switch_signature -->
+          
+                                 <!-- Conteneur du bouton like -->
+          
+          		<!-- BEGIN switch_likes_active -->
+			<div class="like_button">
+				<button class="rep-button {postrow.displayed.switch_likes_active.C_VOTE_LIKE}"  data-href="{postrow.displayed.switch_likes_active.U_VOTE_LIKE}" data-href-rm="{postrow.displayed.switch_likes_active.U_VOTE_RM_LIKE}">
+                                  <img src="https://i.imgur.com/pz1Xa0j.png"/>
+					<span>{postrow.displayed.switch_likes_active.L_LIKE}</span>{postrow.displayed.switch_likes_active.COUNT_VOTE_LIKE}
+				</button>
+				<!-- BEGIN switch_dislike_button -->
+				<button class="rep-button {postrow.displayed.switch_likes_active.switch_dislike_button.C_VOTE_DISLIKE}" data-href="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_DISLIKE}" data-href-rm="{postrow.displayed.switch_likes_active.switch_dislike_button.U_VOTE_RM_LIKE}">
+					  <img src="https://i.imgur.com/BWTtr1o.png"/>
+					<span>{postrow.displayed.switch_likes_active.switch_dislike_button.L_DISLIKE}</span>{postrow.displayed.switch_likes_active.switch_dislike_button.COUNT_VOTE_DISLIKE}
+				</button>
+				<!-- END switch_dislike_button -->
+				<!-- BEGIN switch_like_list -->
+				{postrow.displayed.switch_likes_active.switch_like_list.D_LIKE_LIST}
+				<!-- END switch_like_list -->
+				<!-- BEGIN switch_dislike_list -->
+				{postrow.displayed.switch_likes_active.switch_dislike_list.D_DISLIKE_LIST}
+				<!-- END switch_dislike_list -->
+			</div>
+			<!-- END switch_likes_active -->
+          
+          </div>
+        <!-- Fin du contenu du message -->
+ 
+      
+    </div>
+
+    <!-- END displayed -->
+    <!-- END postrow -->
+    <!-- Fin affichage d'un message -->
+
+  
+</div>
+<!-- Fin des messages -->
+
+
+<!----------------------------------------------->
+<!-- BARRE DE GESTION -------------->
+
+
+<div class="links_bar">
+  
+        <!-- Lien "surveiller le sujet" -->
+        <!-- BEGIN switch_user_logged_in -->
+        <!-- BEGIN watchtopic -->
+        <span class="specials_links">{S_WATCH_TOPIC}</span>
+        <!-- END watchtopic -->
+        <!-- END switch_user_logged_in -->
+        
+        <!-- BEGIN switch_plus_menu -->
+        <!-- Lien "sujets surveillés" -->
+        &nbsp;<a class="specials_links" href="{U_WATCHSEARCH_JS_PLUS_MENU}">Sujets surveillés</a>
+        <!-- END switch_plus_menu -->
+
+    <!-- Pagination -->
+    <!-- BEGIN topicpagination -->
+    <span class="pagination right">{PAGINATION}</span>
+    <!-- END topicpagination -->
+
+</div>
+
+
+<!----------------------------------------------->
+<!-- REGLES DE LA CATEGORIE (si activé) -------------->
+
+<!-- BEGIN switch_forum_rules -->
+<div class="panel" id="forum_rules">
+
+    <!-- Titre "règlement" -->
+    <div class="h3">{L_FORUM_RULES}</div>
+
+    <!-- Règlement -->
+    <div class="postbody">
+        <!-- Image du règlement -->
+        <!-- BEGIN switch_forum_rule_image -->
+        <img class="left logo" src="{RULE_IMG_URL}" alt="" />
+        <!-- END switch_forum_rule_image -->
+
+        <!-- Contenu -->
+        {RULE_MSG}
+    </div>
+
+</div>
+<!-- END switch_forum_rules -->
+
+
+<!----------------------------------------------->
+<!-- REPONSE RAPIDE -------------->
+
+<div class="container quickreply" id="quickreply_content">
+    <!-- BEGIN switch_user_logged_in -->
+    {QUICK_REPLY_FORM}
+    <!-- END switch_user_logged_in -->
+</div>
+
+
+<!----------------------------------------------->
+<!-- BARRE DE GESTION -------------->
+
+
+<div class="links_bar">
+        <!-- Bouton : nouveau -->
+        <!-- BEGIN switch_user_authpost -->
+        <a class="buttons" href="{U_POST_NEW_TOPIC}" rel="nofollow"><img class="newtopic_button" src="{POST_IMG}" class="{POST_IMG_CLASS}" alt="{L_POST_NEW_TOPIC}" /></a>&nbsp;
+        <!-- END switch_user_authpost -->
+      
+        <!-- Bouton : répondre -->
+        <!-- BEGIN switch_user_authreply -->
+        <a class="buttons" href="{U_POST_REPLY_TOPIC}"><img class="reply_button" src="{REPLY_IMG}" class="i_reply" alt="{L_POST_REPLY_TOPIC}" /></a>
+        <!-- END switch_user_authreply -->
+
+</div>
+
+<br/>
+
+<!----------------------------------------------->
+<!-- SAUTER VERS UN AUTRE FORUM -------------->
+
+
+<form action="{S_JUMPBOX_ACTION}" method="get" onsubmit="if(document.jumpbox.f.value == -1){return false;}" class="left">
+    <fieldset class="jumpbox">
+        <label>{L_JUMP_TO}:&nbsp;</label>
+        {S_JUMPBOX_SELECT}&nbsp;
+        <input class="button2" type="submit" value="{L_GO}" />
+    </fieldset>
+</form>
+
+
+<!----------------------------------------------->
+<!-- BOUTONS DE MODERATION -------------->
+
+<!-- BEGIN viewtopic_bottom -->
+<form method="get" action="{S_FORM_MOD_ACTION}" class="right">
+    <fieldset class="quickmod">
+        <input type="hidden" name="t" value="{TOPIC_ID}" />
+
+        <!-- <input type="hidden" name="sid" value="{S_SID}" /> -->
+        <input type="hidden" name="{SECURE_ID_NAME}" value="{SECURE_ID_VALUE}" />
+        <label>{L_MOD_TOOLS}:&nbsp;</label>
+        {S_SELECT_MOD}&nbsp;
+        <input class="button2" type="submit" value="{L_GO}" />
+    </fieldset>
+  <span class="right">{S_TOPIC_ADMIN}</span>
+</form>
+<!-- END viewtopic_bottom -->
+
+
+
+<div class="clear"></div>
+
+<!-- Script image recadré -->
+<!-- BEGIN switch_image_resize -->
+<script type="text/javascript">
+    //<![CDATA[
+    $(resize_images({
+        'selector': '.postbody .content',
+        'max_width': {
+            switch_image_resize.IMG_RESIZE_WIDTH
+        },
+        'max_height': {
+            switch_image_resize.IMG_RESIZE_HEIGHT
+        }
+    }));
+    //]]>
+
+</script>
+<!-- END switch_image_resize -->
+
+
+<!-- BEGIN switch_plus_menu -->
+<script type="text/javascript">
+    //<![CDATA[
+    var multiquote_img_off = '{JS_MULTIQUOTE_IMG_OFF}',
+        multiquote_img_on = '{JS_MULTIQUOTE_IMG_ON}';
+
+</script>
+<!-- END switch_plus_menu -->
+<script type="text/javascript">
+    var hiddenMsgLabel = {
+        visible: '{JS_HIDE_HIDDEN_MESSAGE}',
+        hidden: '{JS_SHOW_HIDDEN_MESSAGE}'
+    };
+    showHiddenMessage = function(id) {
+        try {
+            var regId = parseInt(id, 10);
+            if (isNaN(regId)) {
+                regId = 0;
+            }
+
+            if (regId > 0) {
+                $('.post--' + id).toggle(0, function() {
+                    if ($(this).is(":visible")) {
+                        $('#hidden-title--' + id).html(hiddenMsgLabel.visible);
+                    } else {
+                        $('#hidden-title--' + id).html(hiddenMsgLabel.hidden);
+                    }
+                });
+            }
+        } catch (e) {}
+
+        return false;
+    };
+
+    //]]>
+
+</script>
+
+        <script type="text/javascript">
+         $( document ).ready(function() {
+         $('.Color_profil').find(' a[href^="/u"] span').each(function(){
+         var color = $(this).css('color');          
+        
+         $(this).closest('div').prev().find('.postdetails.poster-profile .label').css('color',color);
+         });
+         });
+       </script>          
