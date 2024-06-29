@@ -1,0 +1,35 @@
+<div class="SOB_pres"><div class="SOB_prestop1"><span><h1>nom prénom</h1><h2>ft. faceclaim ici</h2></span></div><tw2>écrire ici les triggers abordés dans ta fiche, si aucun supprimer la balise</tw2><div class="SOB_prestop"><div class="SOB_prestop2"><span><spt>nom(s)</spt> écrire ici</span><span><spt>prénom(s)</spt> écrire ici</span><span><spt>date de naissance</spt> 00/00/0000</span><span><spt>lieu de naissance</spt> ville ici, pays ici</span><span><spt>occupation</spt> écrire ici</span><span><spt>groupe</spt> écrire ici</span></div> <div class="SOB_prestopimg"><img src="https://via.placeholder.com/200x200"></div></div><div class="SOB_presmid"><div class="SOB_presonglet"><label for="o1" class="sobonglet"><i class="cp cp-info-alt"></i></label><label for="o2" class="sobonglet"><i class="cp cp-calendar-o"></i></label><label for="o3" class="sobonglet"><i class="cp cp-pin-o"></i></label><input id="o1" type="radio" name="onglets" checked /><span class="sobongletcont"><div class="SOB_presblc"><img src="https://via.placeholder.com/200x320" id="SOB_presblcimg1"><span><sob2>nom(s) & prénom(s) ;</sob2> développer ici.
+
+<sob2>date & lieu de naissance ;</sob2> développer ici.
+
+<sob2>nationalité & origines ;</sob2> développer ici.
+
+<sob2>statut civil, orientation, genre & pronoms ;</sob2> (note à supprimer: lorientation sexuelle/genre/pronoms sont facultatifs à remplir, ils ne définissent pas spécialement votre personnage ni ne doivent être un facteur pour obtenir un lien avec celui-ci. si vous ne souhaitez pas le noter, cest ok pour nous! faites juste preuve de vigilance si vous abordez ces sujets!) développer ici.
+
+<sob2>occupation ;</sob2> développer ici.
+
+<sob2>organisation ;</sob2> développer ici. (cette option est facultative, si ton personnage nappartient à aucune organisation tu peux simplement supprimer cette ligne ou aborder le sujet dun point de vue extérieur - ce que ton personnage en pense etc.)
+
+<sob2>association ;</sob2> développer ici. (cette option est facultative, si ton personnage nappartient à aucune association tu peux simplement supprimer cette ligne ou aborder le sujet dun point de vue extérieur - ce que ton personnage en pense etc.)
+
+<sob2>traits de caractère ;</sob2><b>[+++]</b> qualité, qualité, qualité, qualité, qualité
+<b>[---]</b> défaut, défaut, défaut, défaut, défaut</span></div></span><input id="o2" type="radio" name="onglets" /><span class="sobongletcont"><div class="SOB_presblc"><span><info>voici un petit espace que tu peux aménager comme tu veux ! anecdotes, chronologie, histoire, playlist, moodboard... noublie pas de supprimer ce petit texte !</info>
+<sob3>· anecdote 1 ;</sob3> écrire ici
+<sob3>· anecdote 2 ;</sob3> écrire ici
+<sob3>· anecdote 3 ;</sob3> écrire ici
+<sob3>· anecdote 4 ;</sob3> écrire ici
+<sob3>· anecdote 5 ;</sob3> écrire ici
+<sob3>· anecdote 6 ;</sob3> écrire ici
+<sob3>· anecdote 7 ;</sob3> écrire ici
+<sob3>· anecdote 8 ;</sob3> écrire ici
+<sob3>· anecdote 9 ;</sob3> écrire ici
+<sob3>· anecdote 10 ;</sob3> écrire ici</span></div></span><input id="o3" type="radio" name="onglets" /><span class="sobongletcont"><div class="SOB_presblc"><span style="margin-right:10px"><sob2>état du casier judiciaire ;</sob2> <info>est-ce que ton personnage a déjà été interpellé par la police ? et si oui, pour quelles fautes ?</info> ⤷ écrire ici
+<hr>
+<sob2>signes particuliers ;</sob2> <info>est-ce que ton personnage a des tatouages, des cicatrices, des habitudes ou des tics qui permettraient de le différencier des autres ?</info> ⤷ écrire ici
+<hr>
+<sob2>whats up new york ;</sob2> <info>depuis combien de temps ton personnage habite t-il new york ? que représente cette ville à ses yeux ?</info> ⤷ écrire ici
+<hr>
+<sob2>the purge ;</sob2> <info>est-ce que ton personnage est pour ou contre ? quen pense t-il ?</info> ⤷ écrire ici
+
+</span><img src="https://via.placeholder.com/200x320" style="margin-left:0px;margin-right:10px" id="SOB_presblcimg1"></div></span>
+</div></div><div class="SOB_presbot"><span><spt>pseudo</spt> écrire ici</span><span><spt>pronoms</spt> écrire ici</span><span><spt>personnage</spt>prélien/inventé</span><span><spt>crédits</spt>écrire ici</span></div></div>
