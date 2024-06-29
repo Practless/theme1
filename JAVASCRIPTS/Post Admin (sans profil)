@@ -1,0 +1,5 @@
+
+
+$(function() {
+  $('.Administrateur').closest('.post').addClass('bgAdministrateur');
+});
