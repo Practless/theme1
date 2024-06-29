@@ -1,0 +1,84 @@
+<tw>texte ici</tw>
+[code]<tw>texte ici</tw>[/code]
+
+<sob1>texte ici</sob1>
+[code]<sob1>texte ici</sob1>[/code]
+
+<sob2>texte ici</sob2>
+[code]<sob2>texte ici</sob2>[/code]
+
+<sob3>texte ici</sob3>
+[code]<sob3>texte ici</sob3>[/code]
+
+<sob4>texte ici</sob4>
+[code]<sob4>texte ici</sob4>[/code]
+
+<sob5>texte ici</sob5>
+[code]<sob5>texte ici</sob5>[/code]
+
+<sob6>texte ici</sob6>
+[code]<sob6>texte ici</sob6>[/code]
+
+<sob7>texte ici</sob7>
+[code]<sob7>texte ici</sob7>[/code]
+
+<sob8>texte ici</sob8>
+[code]<sob8>texte ici</sob8>[/code]
+
+<sob9>texte ici</sob9>
+[code]<sob9>texte ici</sob9>[/code]
+
+<sob10>texte ici</sob10>
+[code]<sob10>texte ici</sob10>[/code]
+
+<sob11>texte ici</sob11>
+[code]<sob11>texte ici</sob11>[/code]
+
+<sob12>texte ici</sob12>
+[code]<sob12>texte ici</sob12>[/code]
+
+<sob13>texte ici</sob13>
+[code]<sob13>texte ici</sob13>[/code]
+
+<sob14>texte ici</sob14>
+[code]<sob14>texte ici</sob14>[/code]
+
+<u>texte ici</u>
+[code]<u>texte ici</u>[/code]
+
+<u2>texte ici</u2>
+[code]<u2>texte ici</u2>[/code]
+
+<i>texte ici</i>
+[code]<i>texte ici</i>[/code]
+
+<i1>texte ici</i1>
+[code]<i1>texte ici</i1>[/code]
+
+<i2>texte ici</i2>
+[code]<i2>texte ici</i2>[/code]
+
+<b>texte ici</b>
+[code]<b>texte ici</b>[/code]
+
+<strong>texte ici</strong>
+[code]<strong>texte ici</strong>[/code]
+
+<img src="https://i.imgur.com/clPRaac.png" class="SOB_img">
+[code]<img src="URL IMAGE ICI" class="SOB_img">[/code]
+
+<img src="https://i.pinimg.com/564x/00/46/33/0046331a9831818af2a5d32e18939966.jpg" class="SOB_img1">
+[code]<img src="URL IMAGE ICI" class="SOB_img1">[/code]
+
+<blockquote>texte ici</blockquote>
+[code]<blockquote>texte ici</blockquote>[/code]
+
+<i style="margin:5px 0px;display: block;font-size: 12px;line-height: 15px;padding: 4px 10px;background: var(--bg3);border-radius: 2px;">petite description juste ici</i>
+[code]<i style="margin:5px 0px;display: block;font-size: 12px;line-height: 15px;padding: 4px 10px;background: var(--bg3);border-radius: 2px;">petite description juste ici</i>[/code]
+
+<div class="SOB_contextchrono"><div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div><div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div><div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div></div>
+
+[code]<div class="SOB_contextchrono"><div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div><div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div><div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div></div>[/code]
+
+Pour rajouter une date :
+[code]<div class="SOB_contextchronodate"><SOBccmois>mois</SOBccmois><SOBccannee>année</SOBccannee></div><div class="SOB_contextchronotext">écrire ici.</div>[/code]
