@@ -1,0 +1,146 @@
+
+
+<div class="SOB_prof">      
+  
+<div class="SOB_profbloc1">
+  <div class="SOB_profpsd"><usr>{USERNAME}</usr><rnk>{POSTER_RANK}</rnk></div>
+     <div class="SOB_profcntact"> <!-- BEGIN contact_field -->
+  {contact_field.CONTENT}
+		<!-- END contact_field --></div>
+  <div class="SOB_profimg"><!-- BEGIN profile_field --><dl id="field_id{profile_field.ID}" class="SOB_profimg"><dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>
+  
+
+</div>
+
+<div class="SOB_profbloc2">
+
+ 
+<div class="SOB_prof_g"><div class="SOB_lastseen">{LAST_VISIT_TIME}</div>
+<div class="systab s_slide"> 
+  
+<div class="selected"><span>Personnage</span><div class="SOB_profperso"><!-- BEGIN profile_field -->
+<dl id="field_id{profile_field.ID}" class="SOB_profperso">
+<dt>{profile_field.LABEL}</dt> <dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>
+  </div>
+  
+<div><span>Carnet</span><div class="SOB_profcontact"><!-- BEGIN profile_field -->
+<dl id="field_id{profile_field.ID}" class="SOB_profcontact">
+<dt>{profile_field.LABEL}</dt> <dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>
+</div>
+  
+<div><span>Hors rp</span><div class="SOB_profhrp"><!-- BEGIN profile_field -->
+<dl id="field_id{profile_field.ID}" class="SOB_profhrp">
+<dt>{profile_field.LABEL}</dt> <dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>
+</div>
+
+</div>
+  
+<div class="SOB_prof_gb">
+<div class="SOB_profdollars">dollars<!-- BEGIN profile_field --><dl id="field_id{profile_field.ID}" class="SOB_profdollars"><dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>  
+<div class="SOB_profmessages">messages <!-- BEGIN profile_field --><dl id="field_id{profile_field.ID}" class="SOB_profdollars"><dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div> 
+<div class="SOB_profpseudo">joué.e par<!-- BEGIN profile_field --><dl id="field_id{profile_field.ID}" class="SOB_profpseudo"> <dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>  
+<div class="SOB_proffc">feat.<!-- BEGIN profile_field --><dl id="field_id{profile_field.ID}" class="SOB_profpseudo"> <dd>{profile_field.CONTENT}</dd></dl><!-- END profile_field --></div>   
+</div>  
+</div>
+ 
+ 
+<div class="SOB_prof_d">
+<span id="avatar_membre">{AVATAR_IMG}</span>
+  
+  
+
+  
+ <div class="SOB_prof_contact"><!-- BEGIN profile_field --><!-- BEGIN profil_type_user_posts --> 
+<a rel="nofollow" href="/sta/{PUSERNAME}"><div>{L_TOPICS}</div></a>
+<a rel="nofollow" href="/spa/{PUSERNAME}"><div>{L_POSTS}</div></a>
+   <!-- END profil_type_user_posts --><!-- END profile_field -->
+</div></div>
+  
+</div>
+</div> 
+
+<div id="SOB_badges"></div>
+
+
+<!-- BEGIN switch_auth_user -->
+<dl class="left-box details" style="display:flex;justify-content: center;width: 1020px;margin-top:10px;margin-bottom:10px">
+  <center><dt>{L_ADMINISTRATE_USER}:</dt><dd><strong>{ADMINISTRATE_USER}{BAN_USER}</strong></dd></center>
+</dl>
+<!-- END switch_auth_user -->
+
+
+<script src="{JQUERY_ROOT}json/jquery.json-1.3.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(){
+		$('[id^=field_id]').each(function(){
+			if ( $(this).find('.field_editable').is('span, div') )
+			{
+				$(this).hover(function()
+				{
+					if( $(this).find('.field_editable.invisible').is('span, div') )
+					{
+						$(this).find('.field_editable').prev().addClass('ajax-profil_hover').parent().addClass('ajax-profil_parent').append('<div class="ajax-profil_edit"><img src="{AJAX_EDIT_IMG}" /></div>');
+						$(this).find('.ajax-profil_edit').attr({
+								alt: "{L_FIELD_EDIT_VALUE}",
+								title: "{L_FIELD_EDIT_VALUE}"
+							}).click(function(){
+							$(this).prev().prev().removeClass('ajax-profil_hover').addClass('invisible').next().removeClass('invisible').append('<img src="{AJAX_VALID_IMG}" class="ajax-profil_valid" />').find('input,select');
+							$(this).prev().find('.ajax-profil_valid').attr({
+								alt: "{L_VALIDATE}",
+								title: "{L_VALIDATE}"
+							}).click(function(){
+								var content = new Array();
+								$(this).parent().find('[name]').each(function(){
+									var type_special = $(this).is('input[type=radio],input[type=checkbox]');
+									if ( (type_special && $(this).is(':checked')) || !type_special )
+									{
+										content.push(new Array($(this).attr('name'), $(this).attr('value')));
+									}
+								});
+								var id_name = $(this).parents('[id^=field_id]').attr('id');
+								var id = id_name.substring(8, id_name.length);
+								$.post(
+									"{U_AJAX_PROFILE}",
+									{id:id,user:"{CUR_USER_ID}",active:"{CUR_USER_ACTIVE}",content:$.toJSON(content),tid:"{TID}"},
+									function(data){
+										$.each(data, function (i, item) {
+											if (item.startsWith('error : ')){
+												let present_err=document.getElementById('field_id' + i + "_err");
+												if(!present_err){
+													let err = document.createElement('div');
+													err.id = 'field_id' + i + "_err";
+													err.classList.add("form-error");
+													err.textContent = item.substring(8);
+													document.getElementById('field_id' + i).querySelector('.field_editable input').after(err);
+												}else{
+													present_err.innerText=item.substring(8);
+												}
+											}else {
+												let err=document.getElementById('field_id' + i + "_err");
+												if(err){
+													err.remove();
+												}
+												$('[id=field_id' + i + ']').find('.field_uneditable').html(item).end().find('.ajax-profil_valid').remove().end().find('.field_editable').addClass('invisible').end().find('.field_uneditable').removeClass('invisible');
+											}
+										});
+									},
+									"json"
+								);
+							});
+							$(this).remove();
+						});
+					}
+				},function()
+				{
+					if( $(this).find('.field_editable.invisible').is('span, div') )
+					{
+						$(this).find('.field_editable').prev().removeClass('ajax-profil_hover');
+						$(this).find('.ajax-profil_edit').remove();
+					}
+				});
+			}
+		});
+	});
+//]]>
+</script>
