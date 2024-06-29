@@ -1,0 +1,181 @@
+{JAVASCRIPT}
+
+<!-- BEGIN switch_user_login_form_header -->
+<div class="panel">
+	<form action="{S_LOGIN_ACTION}" method="post" name="form_login">
+		<div class="user_login_form center">
+			<input placeholder="{L_USERNAME}" class="inputbox fl_username" type="text" size="10" name="username" />
+			<input placeholder="{L_PASSWORD}" class="inputbox fl_password" type="password" size="10" name="password" />
+			<br />
+			<label>{L_AUTO_LOGIN}: <input class="radio" type="checkbox" name="autologin" {AUTOLOGIN_CHECKED} /></label>
+			{S_HIDDEN_FIELDS}<input class="mainoption button1" type="submit" name="login" value="{L_LOGIN}" />
+            <!-- BEGIN switch_social_login -->
+            <div class="social_btn">
+                <!-- BEGIN fb_connect -->
+                <div class="fb-login-button"></div>
+                <!-- END fb_connect -->
+                <!-- BEGIN topicit_connect -->
+                <div class="ti-connect"></div>
+                <!-- END topicit_connect -->
+            </div>
+            <!-- END switch_social_login -->
+		</div>
+	</form>
+</div>
+<!-- END switch_user_login_form_header -->
+
+<!-- BEGIN message_admin_index -->
+	<div class="panel introduction">
+		<!-- BEGIN message_admin_titre -->
+			<div class="h3">{message_admin_index.message_admin_titre.MES_TITRE}</div>
+		<!-- END message_admin_titre -->
+
+		<!-- BEGIN message_admin_txt -->
+			<div class="mes-txt">{message_admin_index.message_admin_txt.MES_TXT}</div>
+		<!-- END message_admin_txt -->
+	</div>
+<!-- END message_admin_index -->
+
+{CHATBOX_TOP}
+
+{BOARD_INDEX}
+
+  <div class="cin_buttonsposts">
+	<!-- BEGIN switch_user_logged_in -->	
+<a href="{U_SEARCH_NEW}">{L_SEARCH_NEW}</a>
+<a href="{U_SEARCH_SELF}">{L_SEARCH_SELF}</a>
+<a href="{U_MARK_READ}" accesskey="m">{L_MARK_FORUMS_READ}</a>
+<a href="{U_SEARCH_UNANSWERED}">{L_SEARCH_UNANSWERED}</a>
+	<!-- END switch_user_logged_in -->
+</div>
+
+<!-- BEGIN disable_viewonline -->
+
+
+<div class="cinqeel_titre">NEW YORK CITY</div>
+
+<div class="cinqeel_bloc">
+
+<div class="cinqeel_gauche">
+  
+  
+<div class="cinqeel_gauche_bot">
+  
+  <div class="cinqeel_gauche_g">
+    <div class="cinqeel_sstitre2">connectés durant les dernières 72h</div>
+    <div id="users_were_online"><table>{L_ONLINE_USERS}{L_CONNECTED_MEMBERS}</table></div>
+  
+      <div class="cinqeel_groups">
+      <div class="cinqeel_groups2"><a href="/groups" class="heaven"><i class="cp cp-stars-o"></i></a>HEAVEN</div>
+      <div class="cinqeel_groups2"><a href="/groups" class="purgatory"><i class="cp cp-scale-o"></i></a>PURGATORY</div>
+      <div class="cinqeel_groups2"><a href="/groups" class="hell"><i class="cp cp-fire-o"></i></a>HELL</div>
+    </div>
+  
+  </div>
+  
+
+  <div class="cinqeel_gauche_d">
+    <div class="cinqeel_sstitre3">présents actuellement</div>
+    <div id="logged_in_user_list"><table>{LOGGED_IN_USER_LIST}</table></div>
+    
+    <div class="cinqeel_last">
+    <div id="dernier_membre">{NEWEST_USER}</div>
+      <div id="avatar_dernier_membre">{AVATAR_IMG}</div></div>
+    
+         <div class="cinqeel_droite_top">
+    <div id="QEEL_messages">{TOTAL_POSTS}</div>
+    <div id="QEEL_membres">{TOTAL_USERS}</div>
+    </div>
+    
+</div>
+  
+    
+    
+    
+    
+  </div>
+  
+  </div>
+ 
+  
+
+ 
+    
+
+    
+
+  <div class="cinqeel_droite"> 
+   
+    
+
+   <div class="cinqeel_droite_bot">
+          <img src="https://j.gifs.com/kZXBkx.gif"/>
+     <span>
+    <sob11>Straight Outta Bronx ©</sob11> est un forum city sombre basé à New York aux Etats-Unis. Le contexte tire ses inspirations des films horrifiques American Nightmare.</span> 
+     
+
+     
+          <div id="total_users_online">
+       {TOTAL_USERS_ONLINE}</div>
+     
+     
+  </div>
+
+
+</div>
+      
+</div>
+
+
+
+
+
+
+<!-- END disable_viewonline -->
+
+<script type="text/javascript">
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Il y a en tout/,"Les caméras de surveillance de New York ont répéré");
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/::/,"");
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/,/,"");
+  
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/utilisateur en ligne/,"yankee entrain d'errer dans les rues ;");
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/utilisateurs en ligne/,"yankees entrain d'errer dans les rues ;");
+  
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Enregistré/,"citoyen·e honnête,");
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Enregistrés/,"citoyens·es honnêtes,");
+
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Invisible et/,"touriste curieux, ainsi que");
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Invisibles et/,"touristes curieux, ainsi que");
+  
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Invité/,"intéressé·e.");
+  document.getElementById('total_users_online').innerHTML=document.getElementById('total_users_online').innerHTML.replace(/Invités/,"intéressés·ées.");
+
+  
+  document.getElementById('dernier_membre').innerHTML=document.getElementById('dernier_membre').innerHTML.replace(/L'utilisateur enregistré le plus récent est/,"");
+  
+  document.getElementById('QEEL_messages').innerHTML=document.getElementById('QEEL_messages').innerHTML.replace(/Nos membres ont posté un total de/,"");
+  document.getElementById('QEEL_membres').innerHTML=document.getElementById('QEEL_membres').innerHTML.replace(/Nous avons/,"");
+  document.getElementById('QEEL_membres').innerHTML=document.getElementById('QEEL_membres').innerHTML.replace(/membres enregistrés/,"citoyens·es");
+  
+  document.getElementById('logged_in_user_list').innerHTML=document.getElementById('logged_in_user_list').innerHTML.replace(/Utilisateurs enregistrés :/,"");
+  
+  document.getElementById('users_were_online').innerHTML=document.getElementById('users_were_online').innerHTML.replace(/Membres connectés au cours des 72 dernières heures :/,"");
+  
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+{CHATBOX_BOTTOM}
+
+
+
+
+{AUTO_DST}
