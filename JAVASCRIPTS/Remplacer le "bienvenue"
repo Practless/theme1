@@ -1,3 +1,5 @@
+// PLACEMENT : sur toutes les pages
+
 $(function(){$(function(){
   $('#fa_welcome').text(' ✎ ' + _userdata.username);
 })});
