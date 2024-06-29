@@ -1,0 +1,122 @@
+<!-- Affichage des sous forums (template : index_box) -->
+{BOARD_INDEX}
+<br />
+
+
+<!----------------------------------------------->
+<!-- BARRE DE GESTION -------------->
+
+<div class="links_bar">
+
+    <!-- Boutons : nouveau, répondre, verrouillé -->
+    <!-- BEGIN switch_user_authpost -->
+    <a class="buttons" href="{U_POST_NEW_TOPIC}" accesskey="n" rel="nofollow"><img class="newtopic_button"
+            src="{POST_IMG}" class="{POST_IMG_ID}" alt="{L_POST_NEW_TOPIC}" /></a>
+    <!-- END switch_user_authpost -->
+</div>
+
+
+<!----------------------------------------------->
+<!-- LISTE DES SUJETS -------------->
+<!--(template: topics_list_box) -->
+
+<div class="container">
+
+    <!-- Titre liste des sujets -->
+    <h1 class="page-title">{FORUM_NAME}</h1>
+
+<!----------------------------------------------->
+<!-- LIEN DE NAVIGATION -------------->
+
+<div class="navigation_links">
+
+    <!-- Chaîne de lien : Catégorie > Forum > Sous-fo -->
+    <span class="navigation_chain">
+        {NAV_CAT_DESC}
+    </span>
+
+    <!-- Pagination -->
+    <span class="right pagination page-topic">
+        {PAGINATION}
+    </span>
+
+</div>
+    <!-- Liste des sujets -->
+    {TOPICS_LIST_BOX}
+</div>
+
+
+<div class="links_bar">
+    <!-- Lien Surveiller ce forum -->
+    <!-- BEGIN switch_user_logged_in -->
+    <span class="right" id="surv">
+        {S_WATCH_FORUM}
+    </span>
+    <!-- END switch_user_logged_in -->
+<!-- BEGIN switch_user_logged_in -->
+    <span class="right" id="lu">
+        <a href="{U_MARK_READ}">{L_MARK_TOPICS_READ}</a>
+    </span>
+    <!-- END switch_user_logged_in -->
+</div>
+
+<!----------------------------------------------->
+<!-- BARRE DE GESTION -------------->
+
+<!-- Conteneur : utilisateurs et pagination -->
+<div class="navigation_links">
+
+
+    <!-- Pagination -->
+    <span class="right pagination page-topic">
+        {PAGINATION}
+    </span>
+</div>
+
+<!----------------------------------------------->
+<!---------------->
+
+<br />
+<div class="separator"></div>
+<br />
+
+<!----------------------------------------------->
+<!-- OUTILS DE MODERATION ------------>
+<div id="moderation_forum_tools">
+    {S_AUTH_LIST}
+</div>
+
+<!-- Changement de texte du lien "modérer ce forum" -->
+<script type="text/javascript">
+    document.getElementById('moderation_forum_tools').innerHTML = document.getElementById('moderation_forum_tools')
+        .innerHTML.replace(/modérer ce forum/, "Modérer les sujets du forum");
+</script>
+
+
+
+
+<br />
+<div class="clear"></div>
+
+
+
+
+
+<!-- BEGIN switch_sort_options -->
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function () {
+        var sort_btn = $('#sort-btn');
+        sort_btn.on('click', function () {
+            sort_btn.toggleClass('expanded');
+        });
+
+        document.onclick = function (e) {
+            if ($(e.target).parents('#sort-topics').length == 0) {
+                document.getElementById('sort-btn').classList.remove('expanded');
+            }
+        };
+    });
+    //]]>
+</script>
+<!-- END switch_sort_options -->
