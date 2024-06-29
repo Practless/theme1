@@ -1,0 +1,30 @@
+  <div class="LIMP_nav">  
+   <div class="LIMP_cadre">{INBOX}</div>
+   <div class="LIMP_cadre">{SENTBOX}</div>
+   <div class="LIMP_cadre">{OUTBOX}</div>
+   <div class="LIMP_cadre">{SAVEBOX}</div>
+  </div>
+
+<div class="MP_bloc">
+  
+  <div class="MP_avatar">{AVATAR_FROM}</div>
+  
+  <form action="{S_PRIVMSGS_ACTION}" method="post" />
+   <!-- BEGIN switch_post_reply --> <div class="MP_buttons"><a href="{REPLY_PM_URL}" rel="nofollow" class="ion-reply button1" title="{REPLY_PM_IMG}"> {REPLY_PM_IMG}</a></div>  <!-- END switch_post_reply -->
+  
+
+
+      <div class="MP_head">
+        
+   <div class="MP_pseudo">{L_FROM} {MESSAGE_FROM}</div>
+   <div class="MP_heure">{L_POSTED} : {POST_DATE} / {L_SUBJECT} : {POST_SUBJECT}</div>
+   <div class="MESS_links"><!-- BEGIN switch_quote -->{QUOTE_PM_IMG} <!-- END switch_quote --></div>
+ </div>
+    
+  <div class="MP_box">{MESSAGE}</div>
+
+
+  
+    
+</div>
+     
