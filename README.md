@@ -13,7 +13,7 @@ Niveau d'installation : ⭐⭐⭐
 
 🗒️Le CSS global est trop long pour être copié/collé directement dans la feuille de forumactif. Je vous conseille de l'héberger sur archivehost ou dropbox et de rajouter un lien vers celui-ci dans votre overall_header. N'hésitez pas à me mp si vous n'êtes pas à l'aise avec l'installation, je vais faire au mieux pour vous orienter !
 
-Il comporte :
+Il comporte :<br></br>
 • La base du Blank Theme en modernbb (en configurant votre forum avec les paramètres associés)<br></br>
 • Le plugin Messenger d'Ange Tuteur remanié par Geniuspanda, Switcheroo et le mode Edison clair/sombre réalisés par Monomer. <br></br>
 • Une page d'accueil<br></br>
