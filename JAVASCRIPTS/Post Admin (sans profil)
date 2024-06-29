@@ -1,4 +1,5 @@
-
+// PLACEMENT : sur les sujets
+// NOTE : créer un rang unique pour le compte administrateur et l'appeller : Administrateur
 
 $(function() {
   $('.Administrateur').closest('.post').addClass('bgAdministrateur');
