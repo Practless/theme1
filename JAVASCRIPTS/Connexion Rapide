@@ -1,3 +1,5 @@
+// PLACEMENT : sur toutes les pages
+
 $(function() {
     if (_userdata["session_logged_in"] == "0") {
         /* PERSONNALISATION DES TEXTES */
