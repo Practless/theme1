@@ -1,0 +1,3 @@
+$(function(){$(function(){
+  $('#fa_welcome').text(' ✎ ' + _userdata.username);
+})});
