@@ -1,0 +1,45 @@
+<div class="cinml_titre">{PAGE_TITLE}</div>
+
+<div class="cinml_search"><form action="{S_MODE_ACTION}" method="get">
+<div class="panel">
+	<h2 class="h3">{L_ORDER_OR_SELECT}</h2>
+	<p style="text-align:right; margin: 0; padding: 0;">
+		{L_USER_SELECT}&nbsp;<input type="text" class="inputbox tiny" name="username" maxlength="25" size="20" value="{L_USER_SELECT_VALUE}" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{L_SELECT_SORT_METHOD}&nbsp;{S_MODE_SELECT}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{L_ORDER}&nbsp;{S_ORDER_SELECT}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		{S_HIDDEN_SID}
+		<input class="button2" type="submit" name="submit" value="{L_SUBMIT}" />
+	</p>
+</div>
+</form>
+</div>
+
+
+<div class="cinml_bloc">
+  
+  <!-- BEGIN memberrow -->
+  <div class="cinml_card">
+    
+    <div class="cinml_pseudo"><a href="{memberrow.U_VIEWPROFILE}">{memberrow.USERNAME}</a></div>
+    <div class="cinml_faceclaim">as {memberrow.INTERESTS}</div>
+    
+    <a href="{memberrow.U_VIEWPROFILE}">{memberrow.AVATAR_IMG}</a>
+    
+    
+ <div class="cinml_cardhover">  
+   <div class="cinml_post">messages <span>{memberrow.POSTS}</span></div>
+   <div class="cinml_joined">arrivé·e le <span>{memberrow.JOINED}</span></div>
+   <div class="cinml_lastseen">dernière visite <span>{memberrow.LASTVISIT}</span></div>
+    
+  </div>
+
+  
+  </div>
+  <!-- END memberrow -->
+    </div>
+
+  <div class="pagination" style="float:none;">
+	<!-- BEGIN switch_pagination -->
+	{PAGINATION}<br /><br />
+	<!-- END switch_pagination -->
+</div>
