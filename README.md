@@ -12,6 +12,8 @@ Niveau d'installation : ⭐⭐⭐
 ✅ Vous pouvez utiliser entièrement ou partiellement le thème, selon ce qui vous intéresse en fait (du moment que les crédits sont conservés, j'insiste !). Vous pouvez le modifier comme vous le voulez, qu'il s'agisse des couleurs, des formes, des tailles (pitié, restez juste un minimum lisibles même si j'aurais clairement pu faire beaucoup mieux), polices... c'est open bar ! 
 
 🗒️Le CSS global est trop long pour être copié/collé directement dans la feuille de forumactif. Je vous conseille de l'héberger sur archivehost ou dropbox et de rajouter un lien vers celui-ci dans votre overall_header. N'hésitez pas à me mp si vous n'êtes pas à l'aise avec l'installation, je vais faire au mieux pour vous orienter !
+Autrement, le Blank Theme explique comment s'y prendre juste ici : https://blankthemerpg.forumactif.com/t141-heberger-du-css-exterieur
+
 
 Il comporte :<br>
 • La base du Blank Theme en modernbb (en configurant votre forum avec les paramètres associés)<br>
